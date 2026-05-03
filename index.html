@@ -1,28 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Pretty Freak</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pretty Freak</title>
+
   <style>
     body {
+      margin: 0;
+      font-family: Arial, sans-serif;
       background: black;
       color: white;
-      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('hero.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
       text-align: center;
-      padding-top: 30%;
     }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+    }
+
     h1 {
-      font-size: 3em;
+      font-size: 3rem;
       color: hotpink;
+      margin-bottom: 10px;
     }
+
     p {
-      font-size: 1.2em;
       color: #ccc;
+      margin-bottom: 30px;
     }
-  </style>
-</head>
-<body>
-  <h1>Pretty Freak</h1>
-  <p>We’re live. Stay tuned.</p>
-</body>
-</html>
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+flex-wrap: wrap;
+    }
